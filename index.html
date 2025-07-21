@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хранилище лабораторных работ</title>
+    <style>
+        :root {
+            --dark-blue: #0a192f;
+            --medium-blue: #172a45;
+            --light-blue: #303f60;
+            --accent-blue: #64ffda;
+            --text-color: #e6f1ff;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--dark-blue);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid var(--light-blue);
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            color: var(--accent-blue);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: var(--text-color);
+            opacity: 0.8;
+            font-size: 1.1rem;
+        }
+        
+        .labs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .lab-card {
+            background-color: var(--medium-blue);
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .lab-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .lab-title {
+            color: var(--accent-blue);
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--light-blue);
+            padding-bottom: 10px;
+        }
+        
+        .lab-description {
+            margin-bottom: 20px;
+            color: var(--text-color);
+            opacity: 0.9;
+            font-size: 0.95rem;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background-color: var(--accent-blue);
+            color: var(--dark-blue);
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        
+        .download-btn:hover {
+            background-color: #52d4b9;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px 0;
+            border-top: 1px solid var(--light-blue);
+            color: var(--text-color);
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Хранилище лабораторных работ</h1>
+            <p class="subtitle">Все материалы для практических занятий в одном месте</p>
+        </header>
+        
+        <main>
+            <div class="labs-grid">
+                <!-- Лабораторная работа 1 -->
+                <div class="lab-card">
+                    <h2 class="lab-title">Лабораторная работа №1</h2>
+                    <p class="lab-description">
+                        Основы HTML и CSS. Создание простой веб-страницы с использованием базовых тегов и стилей.
+                    </p>
+                    <a href="#" class="download-btn">Скачать материалы</a>
+                </div>
+                
+                <!-- Лабораторная работа 2 -->
+                <div class="lab-card">
+                    <h2 class="lab-title">Лабораторная работа №2</h2>
+                    <p class="lab-description">
+                        JavaScript: основы. Изучение переменных, функций и обработки событий в JavaScript.
+                    </p>
+                    <a href="#" class="download-btn">Скачать материалы</a>
+                </div>
+                
+                <!-- Лабораторная работа 3 -->
+                <div class="lab-card">
+                    <h2 class="lab-title">Лабораторная работа №3</h2>
+                    <p class="lab-description">
+                        Работа с DOM. Манипуляции с элементами страницы с помощью JavaScript.
+                    </p>
+                    <a href="#" class="download-btn">Скачать материалы</a>
+                </div>
+                
+                <!-- Лабораторная работа 4 -->
+                <div class="lab-card">
+                    <h2 class="lab-title">Лабораторная работа №4</h2>
+                    <p class="lab-description">
+                        Асинхронные запросы. Использование Fetch API для получения данных с сервера.
+                    </p>
+                    <a href="#" class="download-btn">Скачать материалы</a>
+                </div>
+                
+                <!-- Лабораторная работа 5 -->
+                <div class="lab-card">
+                    <h2 class="lab-title">Лабораторная работа №5</h2>
+                    <p class="lab-description">
+                        Основы React. Создание компонентов и работа с состоянием приложения.
+                    </p>
+                    <a href="#" class="download-btn">Скачать материалы</a>
+                </div>
+                
+                <!-- Лабораторная работа 6 -->
+                <div class="lab-card">
+                    <h2 class="lab-title">Лабораторная работа №6</h2>
+                    <p class="lab-description">
+                        Работа с API. Интеграция внешних сервисов в веб-приложение.
+                    </p>
+                    <a href="#" class="download-btn">Скачать материалы</a>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>© 2023 Хранилище лабораторных работ. Все права защищены.</p>
+        </footer>
+    </div>
+</body>
+</html>
